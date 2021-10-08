@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(images/body_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .login-container{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 1026px;
+            height: 626px;
+            box-shadow: 5px 5px 8px 1px #aaa;
+            display: flex;
+            background-color: #fff;
+        }
+        @media (max-width:1099px){
+            .login-container{
+                width: 400px;
+            }
+            .imgbox{
+                display: none;
+            }
+        }
+        .loginbox{
+            width: 400px;
+            padding: 20px;
+        }
+        .loginbox>a{
+            text-decoration: none;
+            color: #E59592;
+            border: 1px solid #E59592;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 5px 15px;
+            float: right;
+            margin-bottom: 50px;
+        }
+        .loginbox>a:hover{
+            border-color: #F5DC51;
+            background-color: #F5DC51;
+            color: #fff;
+        }
+        .loginbox>p{
+            clear: both;
+            text-align: center;
+            font-size: 18px;
+            line-height: 32px;
+            color: #aaa;
+        }
+        .loginbox .welcometext{
+            font-size: 26px;
+            color: #E69693;
+        }
+        .loginbox form{
+            width: 300px;
+            margin: 30px auto;
+            color: #aaa;
+        }
+        form p{
+            padding: 5px;
+        }
+        .boxcolor{
+            padding: 4px 15px;
+            background-color: #E59592;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .boxcolor i{
+            color: #fff;
+            margin-top: 9px;
+        }
+        .boxcolor input{
+            border: none;
+            background: none;
+            color: #fff;
+            padding: 10px;
+            margin-left: 5px;
+            font-size: 14px;
+            vertical-align: top;
+            width: 89%;
+        }
+        .boxcolor input::placeholder{
+            color: #fff;
+            font-size: 12px;
+        }
+        .loginbox form label{
+            padding: 5px;
+            display: inline-block;
+        }
+        .loginbox form button{
+            display: block;
+            border: none;
+            border-radius: 20px;
+            background-color: #435AF7;
+            padding: 10px;
+            width: 100%;
+            color: #fff;
+            font-size: 18px;
+            font-family: inherit;
+            margin-top: 20px;
+        }
+        .loginbox form button:hover{
+            background-color: #F5DC51;
+            cursor: pointer;
+        }
+        .forgot{
+            list-style: none;
+            display: flex;
+            padding: 0 40px;
+        }
+        .forgot li{
+            width: 50%;
+            text-align: center;
+        }
+        .forgot a{
+            text-decoration: none;
+            color: #E49593;
+            font-size: 12px;
+        }
+        .forgot a:hover{
+            font-size: 16px;
+            color: #F5DC51;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="imgbox">
+            <img src="images/login_bg.jpg" alt="">
+        </div>
+        <div class="loginbox">
+            <a href="#" target="_blank">Sign up</a>
+            <p class="welcometext">Welcome!</p>
+            <p>Sign in to your account</p>
+            <form>
+                <p>ID</p>
+                <p class="boxcolor">
+                    <i class="far fa-user"></i>
+                    <input type="text" placeholder="Please enter your ID" required>
+                </p>
+                <p>Password</p>
+                <p class="boxcolor">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Please enter your password" required>
+                </p>
+                <label><input type="checkbox"> remember me</label>
+                <button type="submit">Login</button>
+            </form>
+            <ul class="forgot">
+                <li><a href="#">forgot ID?</a></li>
+                <li><a href="#">forgot Password?</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
